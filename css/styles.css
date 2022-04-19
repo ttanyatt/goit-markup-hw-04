@@ -167,7 +167,13 @@ align-items: center;
     padding-bottom: 200px;
 
     background-color: var(--accent-bg-color);
-}
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    }
 
 .hero-title {
     max-width: 696px;
@@ -308,6 +314,24 @@ align-items: center;
     color: var(--secondary-text-color);
 }
 
+.team-social-list {
+    display: flex;
+    padding-bottom: 30px;
+    justify-content: center;
+}
+
+.team-social-item:not(:last-child) {
+        margin-right: 10px;
+}
+
+.team-social-link {
+    width: 44px;
+    height: 44px;
+    background-color: orange;
+    border-radius: 50%;
+    display: block;
+}
+
 /*----------------------FOOTER-----------------------*/
 
 .footer {
@@ -388,15 +412,6 @@ margin-top: 20px;
     margin-bottom: -30px;
 }
 
-.project-card-content {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE; 
-}
-
 .project-card {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
@@ -419,4 +434,13 @@ margin-top: 20px;
     font-size: 16px;
     line-height: 1.88;
     color: var(--secondary-text-color);
+}
+
+.project-card-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 }
