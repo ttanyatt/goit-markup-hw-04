@@ -175,14 +175,16 @@ background-position: center;
 background-image: url(../images/icons/envelope-hover.svg);
 }
 
+
 .icon-tel::before {
     background-image: url(../images/icons/smartphone.svg);
-}
+} */
+
 
 .contacts-item {
     display: flex;
 
-} */
+}
 
 
 
@@ -268,19 +270,19 @@ background-image: url(../images/icons/envelope-hover.svg);
 }
 
 .icon-antenna::before {
-    background-image: url(../images/icons/antenna.svg);
+    background-image: url(../images/antenna.svg);
 }
 
 .icon-clock::before {
-    background-image: url(../images/icons/clock.svg);
+    background-image: url(../images/clock.svg);
 }
 
 .icon-diagram::before {
-    background-image: url(../images/icons/diagram.svg);
+    background-image: url(../images/diagram.svg);
 }
 
 .icon-astronaut::before {
-    background-image: url(../images/icons/astronaut.svg);
+    background-image: url(../images/astronaut.svg);
 }
 
 .features-title {
