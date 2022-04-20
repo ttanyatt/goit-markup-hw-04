@@ -11,6 +11,7 @@
     --footer-contacts-color: rgba(255, 255, 255, 0.6);
     --btn-text-color: #ffffff;
     --hero-title-text-color: #FFFFFF;
+    --icons-color: #AFB1B8;
 }
 
 body {
@@ -138,20 +139,14 @@ align-items: center;
     color: var(--accent-text-color);
 }
 
-.contacts {
+.contacts-list {
     display: flex;
     margin-left: auto;
     align-items: center;
 }
 
-.contacts-item:not(:last-child) {
-    margin-right: 50px;
-}
-
-
 .contacts-link {
     color: var(--secondary-text-color);
-   
 }
 
 
@@ -159,6 +154,38 @@ align-items: center;
 .contacts-link:focus {
     color: var(--accent-text-color);
 }
+
+.contacts-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+/* .contacts-item::before {
+display: inline-block;
+content: '';
+height: 16px;
+width: 16px;
+margin-right: 10px;
+background-color: var(--primary-bg-color);
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+}
+
+.icon-mail::before {
+background-image: url(../images/icons/envelope-hover.svg);
+}
+
+.icon-tel::before {
+    background-image: url(../images/icons/smartphone.svg);
+}
+
+.contacts-item {
+    display: flex;
+
+} */
+
+
+
 
 /*----------------------HERO-----------------------*/
 
@@ -228,6 +255,32 @@ align-items: center;
 .features-item {
     flex-basis: calc(100% / 4 - 30px);
     margin-left: 30px;
+}
+
+.features-item::before {
+    display: block;
+    content: '';
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--secondary-bg-color);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-antenna::before {
+    background-image: url(../images/icons/antenna.svg);
+}
+
+.icon-clock::before {
+    background-image: url(../images/icons/clock.svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/icons/diagram.svg);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/icons/astronaut.svg);
 }
 
 .features-title {
@@ -327,9 +380,24 @@ align-items: center;
 .team-social-link {
     width: 44px;
     height: 44px;
-    background-color: orange;
+    background-color: var(--primary-bg-color);
     border-radius: 50%;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-social-icon {
+    fill: var(--icons-color);
+}
+
+.team-social-link:hover, .team-social-link:focus {
+    background-color: var(--accent-text-color);
+}
+
+.team-social-link:hover .team-social-icon,
+.team-social-link:focus .team-social-icon {
+    fill: var(--primary-bg-color);
 }
 
 /*----------------------FOOTER-----------------------*/
