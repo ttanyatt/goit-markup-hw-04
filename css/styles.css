@@ -145,7 +145,14 @@ align-items: center;
     align-items: center;
 }
 
+.contacts-item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .contacts-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--secondary-text-color);
 }
 
@@ -155,38 +162,13 @@ align-items: center;
     color: var(--accent-text-color);
 }
 
-.contacts-item:not(:last-child) {
-    margin-right: 50px;
+.contacts-text {
+    margin-left: 10px;
 }
 
-/* .contacts-item::before {
-display: inline-block;
-content: '';
-height: 16px;
-width: 16px;
-margin-right: 10px;
-background-color: var(--primary-bg-color);
-background-repeat: no-repeat;
-background-size: contain;
-background-position: center;
+.contacts-icons {
+    fill: currentColor;
 }
-
-.icon-mail::before {
-background-image: url(../images/icons/envelope-hover.svg);
-}
-
-
-.icon-tel::before {
-    background-image: url(../images/icons/smartphone.svg);
-} */
-
-
-.contacts-item {
-    display: flex;
-
-}
-
-
 
 
 /*----------------------HERO-----------------------*/
@@ -387,19 +369,16 @@ background-image: url(../images/icons/envelope-hover.svg);
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--icons-color);
 }
 
 .team-social-icon {
-    fill: var(--icons-color);
+   fill: currentColor;
 }
 
 .team-social-link:hover, .team-social-link:focus {
     background-color: var(--accent-text-color);
-}
-
-.team-social-link:hover .team-social-icon,
-.team-social-link:focus .team-social-icon {
-    fill: var(--primary-bg-color);
+    color: var(--primary-bg-color);
 }
 
 /*----------------------FOOTER-----------------------*/
